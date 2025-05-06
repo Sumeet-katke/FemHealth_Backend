@@ -1,0 +1,59 @@
+{
+  "predicted": [
+    "Low-GI fruits",
+    "High-fiber foods",
+    "Avocados",
+    "Greek yogurt",
+    "Chia seeds",
+    "Broccoli",
+    "Tofu-based meals",
+    "Turmeric smoothies",
+    "Sweet potatoes",
+    "Lentil soups",
+    "Cabbage stir fry",
+    "Pumpkin seeds",
+    "Herbal detox teas"
+  ],
+  "confirmed": [
+    "Omega-3 fish",
+    "Magnesium-rich foods",
+    "Quinoa",
+    "Cinnamon",
+    "Leafy greens",
+    "Zinc-rich seeds",
+    "Apple cider vinegar water",
+    "Lean protein bowls",
+    "Buckwheat pancakes",
+    "Fermented foods (like kimchi, sauerkraut)",
+    "Sprouted legumes",
+    "Hummus with veggies",
+    "Flaxseed powder smoothies"
+  ],
+  "depression": [
+    "Tryptophan-rich foods",
+    "Bananas",
+    "Green tea",
+    "Dark chocolate",
+    "Oats and almonds",
+    "Salmon and walnuts",
+    "Blueberries",
+    "Chamomile tea",
+    "Spinach and chickpea curry",
+    "Turmeric golden milk",
+    "Greek yogurt with berries",
+    "Brown rice with black beans",
+    "Avocado toast on whole-grain bread"
+  ],
+  "default": [
+    "Drink water",
+    "Limit sugar",
+    "Eat whole foods",
+    "Balanced meals",
+    "Fruits and veggies",
+    "Avoid processed snacks",
+    "Small frequent meals",
+    "Avoid caffeine overload",
+    "Incorporate healthy fats like nuts and seeds",
+    "Practice mindful eating"
+  ]
+}

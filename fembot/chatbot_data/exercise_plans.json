@@ -1,0 +1,50 @@
+{
+  "predicted": [
+    "Brisk walking",
+    "Beginner pilates",
+    "Light HIIT",
+    "Core stability exercises",
+    "Stretch and tone routines",
+    "Chair yoga",
+    "Low-impact dance cardio",
+    "Step aerobics",
+    "Wall push-ups",
+    "Bodyweight squats"
+  ],
+  "confirmed": [
+    "Strength training",
+    "Resistance band workouts",
+    "Yoga for PCOS",
+    "Cardio kickboxing",
+    "Weighted squats and lunges",
+    "Kettlebell swings",
+    "Barre workouts",
+    "Interval treadmill workouts",
+    "TRX suspension training",
+    "Glute bridges and core drills"
+  ],
+  "depression": [
+    "Tai Chi",
+    "Nature walks",
+    "Dance therapy",
+    "Mindful movement routines",
+    "Low-pressure cardio with music",
+    "Aqua aerobics",
+    "Slow flow yoga",
+    "Deep breathing exercises with movement",
+    "Balance and coordination drills",
+    "Guided movement meditation"
+  ],
+  "default": [
+    "Light yoga",
+    "Stretching",
+    "Walking after meals",
+    "5-minute morning warmups",
+    "Desk mobility exercises",
+    "Stair climbing at home",
+    "Foam rolling and recovery",
+    "Short evening strolls",
+    "Gentle arm and leg circles",
+    "Toe touches and spinal twists"
+  ]
+}

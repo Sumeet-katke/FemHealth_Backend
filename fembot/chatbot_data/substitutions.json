@@ -1,0 +1,93 @@
+{
+  "yogurt": [
+    "plant-based yogurt",
+    "coconut yogurt",
+    "almond yogurt",
+    "cashew yogurt"
+  ],
+  "broccoli": [
+    "cauliflower",
+    "zucchini",
+    "green beans",
+    "asparagus"
+  ],
+  "salmon": [
+    "tofu",
+    "chickpeas",
+    "tempeh",
+    "mushroom steaks"
+  ],
+  "walking": [
+    "cycling",
+    "treadmill walking",
+    "elliptical trainer",
+    "indoor step workouts"
+  ],
+  "yoga": [
+    "tai chi",
+    "pilates",
+    "gentle stretching",
+    "guided breathing with stretching"
+  ],
+  "gluten": [
+    "quinoa",
+    "brown rice",
+    "millet",
+    "buckwheat"
+  ],
+  "milk": [
+    "almond milk",
+    "soy milk",
+    "oat milk",
+    "coconut milk"
+  ],
+  "nuts": [
+    "sunflower seeds",
+    "pumpkin seeds",
+    "hemp hearts",
+    "edamame"
+  ],
+  "Omega-3 fish": [
+    "flaxseeds",
+    "chia seeds",
+    "walnuts",
+    "hemp seeds",
+    "algal oil (vegan-friendly)"
+  ],
+  "sugar": [
+    "stevia",
+    "monk fruit sweetener",
+    "honey (in moderation)",
+    "date paste"
+  ],
+  "white rice": [
+    "brown rice",
+    "cauliflower rice",
+    "quinoa",
+    "farro"
+  ],
+  "potatoes": [
+    "sweet potatoes",
+    "turnips",
+    "carrots",
+    "parsnips"
+  ],
+  "bread": [
+    "whole grain wraps",
+    "gluten-free bread",
+    "lettuce wraps",
+    "sourdough"
+  ],
+  "coffee": [
+    "green tea",
+    "matcha",
+    "herbal tea",
+    "chicory root coffee"
+  ],
+  "red meat": [
+    "lentils",
+    "tofu",
+    "tempeh",
+    "black beans"
+  ]
+}
