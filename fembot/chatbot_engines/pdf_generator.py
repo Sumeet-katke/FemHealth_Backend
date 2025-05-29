@@ -20,7 +20,7 @@ class PlanPDF(FPDF):
             self.cell(0, 10, f"{icon} {item}", ln=True)
         self.ln(5)
 from django.conf import settings
-def generate_plan_pdf(user_id, diagnosis, diet, exercise, mood):
+def generate_plan_pdf(user_id,  diet, exercise, mood):
     pdf = PlanPDF()
     pdf.add_page()
     # Add the Unicode font
@@ -31,7 +31,7 @@ def generate_plan_pdf(user_id, diagnosis, diet, exercise, mood):
     pdf.set_font('DejaVu', '', 14)
 
     pdf.chapter_title(f"User ID: {user_id}")
-    pdf.chapter_title(f"Diagnosis: {diagnosis.capitalize()}")
+    # pdf.chapter_title(f"Diagnosis: {diagnosis.capitalize()}")
     pdf.chapter_title(f"Mood: {mood.capitalize()}")
 
     pdf.chapter_title(" Diet Recommendations:")

@@ -648,9 +648,9 @@ Would you like to **adjust**, **save as PDF**, or get a new plan?
             return self.generate_plan(diagnosis, user_id)
 
         # Save plan
-        if "save plan" in user_message.lower() or "pdf" in user_message.lower():
+        if "save as pdf" in user_message.lower() or "pdf" in user_message.lower():
             plan_text, data = self.generate_plan(diagnosis, user_id)
-            filename = generate_plan_pdf(user_id, data["diet"], data["exercise"], data["mood"])
+            filename = generate_plan_pdf(user_id=user_id, diet=data["diet"], exercise=data["exercise"], mood=data["mood"])
             return f"Your plan has been saved as a PDF! 📄 You can download it here: `/media/plans/{filename}`", {}
 
         # Substitution

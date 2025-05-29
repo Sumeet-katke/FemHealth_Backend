@@ -178,9 +178,9 @@ class PCOSPredictView(APIView):
 
         return Response({
             "predictions": [
-                { "label": "Risk Level",           "value": round(last.risk_level, 2) },
-                { "label": "Hormonal Imbalance",   "value": round(last.hormonal_imbalance, 2) },
-                { "label": "Cycle Irregularity",   "value": round(last.cycle_irregularity, 2) },
+                { "label": "Risk Level",         "value": round(last.risk_level, 2) },
+                { "label": "Hormonal Imbalance", "value": round(last.hormonal_imbalance, 2) },
+                { "label": "Cycle Irregularity", "value": round(last.cycle_irregularity, 2) },
             ]
         }, status=status.HTTP_200_OK)
     
@@ -212,7 +212,7 @@ class PCOSPredictView(APIView):
             bg_code = BLOOD_GROUP_MAP.get(data.get('bloodGroup'), DEFAULTS['Blood_Group'])
 
             # --- 2) Build full 44-length feature map ---
-            feature_map = DEFAULTS.copy()
+            feature_map = {}
             feature_map.update({
                 'Age_yrs': age,
                 'Weight_Kg': weight,
@@ -272,9 +272,8 @@ class PCOSPredictView(APIView):
         except Exception as e:
             print(f"Error: {str(e)}")
             return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
-        
 
-        
+
 # femhealth/views.py
 import datetime
 import pandas as pd
@@ -334,6 +333,7 @@ class CycleEntryListCreate(APIView):
 
         # 5) serialize and return
         serializer = CycleEntrySerializer(continuous, many=True)
+        print(serializer.data)
         return Response(serializer.data)
 
     def post(self, request):
