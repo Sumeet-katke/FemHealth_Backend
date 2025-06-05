@@ -9,6 +9,7 @@ from .models import CustomUser as User
 from django.contrib.auth.hashers import make_password
 from rest_framework.exceptions import ValidationError
 from .serializers import RegisterUserSerializer
+from django.conf import settings
 
 
 class RegisterUserAPIView(APIView):
@@ -97,9 +98,13 @@ from rest_framework import status
 from .models import PCOSPredictionLog
 from .serializers import PCOSPredictionSerializer
 
+model_path = os.path.join(settings.BASE_DIR, 'femhealth', 'Models', 'pcos_xgboost_model.pkl')
+scaler_file = os.path.join(settings.BASE_DIR, 'femhealth', 'Models', 'scaler.pkll')
+
+
 # Load model and scaler only once
-model = joblib.load('/Users/sumeetkatke/MyDocs/MyProjects/Major Project/FemHealth/Backend_/femhealth/femhealth/Models/pcos_xgboost_model.pkl')
-scaler, feature_columns = joblib.load('/Users/sumeetkatke/MyDocs/MyProjects/Major Project/FemHealth/Backend_/femhealth/femhealth/Models/scaler.pkl')
+model = joblib.load(model_path)
+scaler, feature_columns = joblib.load(scaler_file)
 
 
 # 2) Blood‐group dropdown → numeric mapping
@@ -412,8 +417,9 @@ from .models import CycleEntry
 import pickle
 
 # --- 1) load the period model once at top ---
-PERIOD_MODEL_PATH = '/Users/sumeetkatke/MyDocs/MyProjects/Major Project/FemHealth/Backend_/femhealth/femhealth/Models/period_prediction_model_2.pkl'
-with open(PERIOD_MODEL_PATH, 'rb') as f:
+period_model_path = os.path.join(settings.BASE_DIR, 'femhealth', 'Models','period_prediction_model_2.pkl')
+
+with open(period_model_path, 'rb') as f:
     period_model = pickle.load(f)
 
 import datetime
@@ -533,7 +539,7 @@ class PredictPeriod(APIView):
     
 # femhealth/backend/views.py
 import os, pickle
-from django.conf import settings
+
 from rest_framework.views import APIView
 from rest_framework.parsers import MultiPartParser, FormParser
 # ... other imports ...
