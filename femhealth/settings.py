@@ -145,7 +145,23 @@ CHANNEL_LAYERS = {
     },
 }
 
-CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOW_ALL_ORIGINS = False
+
+ALLOWED_HOSTS = [
+    "femhealth-backend.onrender.com",  # your Render backend
+    "fem-health.vercel.app",           # your Vercel frontend
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "https://fem-health.vercel.app",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://fem-health.vercel.app",
+]
+
+# Optional: allow credentials for JWT or cookie auth
+CORS_ALLOW_CREDENTIALS = True
 
 # JWT Authentication Settings
 REST_FRAMEWORK = {
