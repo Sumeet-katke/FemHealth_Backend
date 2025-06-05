@@ -10,6 +10,7 @@ from django.contrib.auth.hashers import make_password
 from rest_framework.exceptions import ValidationError
 from .serializers import RegisterUserSerializer
 from django.conf import settings
+import os 
 
 
 class RegisterUserAPIView(APIView):
