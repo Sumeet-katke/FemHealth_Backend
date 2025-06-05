@@ -165,3 +165,6 @@ SIMPLE_JWT = {
 # settings.py
 
 AUTH_USER_MODEL = 'backend.CustomUser'  # Replace 'femhealth' with the name of your app
+import os 
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
