@@ -150,6 +150,7 @@ CHANNEL_LAYERS = {
 ALLOWED_HOSTS = [
     "femhealth-backend.onrender.com",  # your Render backend
     "fem-health.vercel.app",           # your Vercel frontend
+    "*",
 ]
 
 CORS_ALLOWED_ORIGINS = [
