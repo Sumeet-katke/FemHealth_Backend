@@ -100,7 +100,7 @@ from .models import PCOSPredictionLog
 from .serializers import PCOSPredictionSerializer
 
 model_path = os.path.join(settings.BASE_DIR, 'femhealth', 'Models', 'pcos_xgboost_model.pkl')
-scaler_file = os.path.join(settings.BASE_DIR, 'femhealth', 'Models', 'scaler.pkll')
+scaler_file = os.path.join(settings.BASE_DIR, 'femhealth', 'Models', 'scaler.pkl')
 
 
 # Load model and scaler only once
