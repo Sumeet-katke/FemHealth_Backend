@@ -154,11 +154,11 @@ ALLOWED_HOSTS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://fem-health.vercel.app",
+    "*",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://fem-health.vercel.app",
+    "*",
 ]
 
 # Optional: allow credentials for JWT or cookie auth
